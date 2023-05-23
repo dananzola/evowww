@@ -1,0 +1,57 @@
+﻿@keyframes scaleUpDown {
+    0%, 100% {
+        transform: scaleY(1) scaleX(1);
+    }
+
+    15%, 90% {
+        transform: scaleY(1.05) scaleX(1.07);
+    }
+
+    75%,25% {
+        transform: scaleY(.94) scaleX(.93);
+    }
+
+    80%, 50% {
+        transform: scaleY(1) scaleX(1);
+    }
+}
+
+@keyframes particleUp {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        top: -100%;
+        transform: scale(0.5);
+    }
+}
+
+@keyframes glow {
+    0%, 100% {
+        text-shadow: 0 0 10px rgba(110, 147, 161, 1);
+        ;
+    }
+
+    50% {
+        text-shadow: 0 0 10px rgba(110, 170, 200, 1);
+    }
+}
+
+.smoke-glow-text {
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: black;
+    position: relative;
+    display: inline-block;
+    animation: scaleUpDown 20s ease-out infinite, glow 4s ease-out infinite;
+}
