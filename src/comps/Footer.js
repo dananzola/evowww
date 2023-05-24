@@ -2,7 +2,7 @@
 
 function Footer() {
     return (
-        <footer style={{ paddingBottom: '100px' }}>
+        <footer>
             <div className="container p-4">
                 <div className="row">
                     <div className="col-lg-6 col-md-12 mb-4">
