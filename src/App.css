@@ -10911,12 +10911,9 @@ a.nav-link:hover {
 }
 
 [class^="col-"] {
-    z-index: 2;
-}
-
-[class^="row-"] {
     z-index: 1;
 }
+
 
 .logotop {
     z-index: 0;
