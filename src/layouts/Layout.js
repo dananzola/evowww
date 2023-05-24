@@ -35,6 +35,8 @@ export default function Layout() {
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center',
             }}>
+            <img className="rotate" src="/imgs/e.png" alt="" />
+            <img className="rotateS" src="/imgs/e.png" alt="" />
             <div className="container px-4 px-lg-6" id="containerPad">
             <div className="row gx-4 gx-lg-6">
 
@@ -45,8 +47,7 @@ export default function Layout() {
                 </div>
                 <Connections /> 
 
-            <img className="rotate" src="/imgs/e.png" alt="" />
-            <img className="rotateS" src="/imgs/e.png" alt="" />
+            
 
             
                 
