@@ -3,14 +3,14 @@ import emailjs from 'emailjs-com';
 
 const ContactForm = () => {
     const [formData, setFormData] = useState({ name: '', email: '', phone: '', message: '' });
+    const [isSent, setIsSent] = useState(false);
 
     const handleSubmit = (e) => {
         e.preventDefault();
-
         emailjs.sendForm('service_c5234pq', 'template_2kvv8rs', e.target, 'riP2GHBEq6HYR7nqr')
             .then((result) => {
                 console.log(result.text);
-                // Reset form after sending email
+                setIsSent(true);
                 setFormData({ name: '', email: '', phone: '', message: '' });
             }, (error) => {
                 console.log(error.text);
@@ -40,6 +40,7 @@ const ContactForm = () => {
                     <h5>send</h5>
                 </button>
             </div>
+            {isSent && <p>Email sent successfully!</p>}
         </form>
     );
 };
