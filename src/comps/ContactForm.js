@@ -24,7 +24,7 @@ const ContactForm = () => {
     return (
         <>
             {isSent ? (
-                <p>Email sent successfully!</p>
+                <p><h5>Message sent!</h5> <h6>Feel free to call or text.</h6></p>
             ) : (
                 <form onSubmit={handleSubmit} className="form-container">
                     <div className="form-group m-1">
