@@ -7,13 +7,13 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-const CLIENT_ID = '412603416347-732069pdtqlhlo5jgcj6cgp6u57nj3am.apps.googleusercontent.com';
+/*const CLIENT_ID = '412603416347-732069pdtqlhlo5jgcj6cgp6u57nj3am.apps.googleusercontent.com';
 const CLIENT_SECRET = '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';
 const REDIRECT_URI = 'http://localhost:3000/auth/callback';
 const REFRESH_TOKEN = '';
 
 const oAuth2Client = new google.auth.OAuth2(CLIENT_ID, CLIENT_SECRET, REDIRECT_URI);
-oAuth2Client.setCredentials({ refresh_token: REFRESH_TOKEN });
+oAuth2Client.setCredentials({ refresh_token: REFRESH_TOKEN });*/
 
 const sendEmail = async (formData) => {
     try {
@@ -54,6 +54,6 @@ app.post('/send-email', (req, res) => {
 
 
 
-app.listen(3001, () => {
+/*app.listen(3001, () => {
     console.log('Server is running on port 3001');
-});
+});*/
