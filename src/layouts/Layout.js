@@ -50,9 +50,9 @@ export default function Layout() {
             
 
             
-                
+                    <Footer />
             </div>
-            <Footer />
+            
             </div>
         </div>
     )
