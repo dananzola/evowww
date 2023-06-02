@@ -3,16 +3,15 @@ import NavigationBar from '../comps/NavigationBar';
 import Footer from '../comps/Footer';
 import { Outlet } from 'react-router-dom';
 import Header from '../comps/Header';
-import Connections from '../comps/Connections'
+import Connections from '../comps/Connections';
 
 export default function Layout() {
-
     const [backgroundImage, setBackgroundImage] = useState('');
+
     useEffect(() => {
         const getCurrentTime = () => {
             const date = new Date();
             const hours = date.getHours();
-
             if (hours >= 6 && hours < 12) {
                 setBackgroundImage('imgs/beachbg.png');
             } else if (hours >= 12 && hours < 18) {
@@ -21,7 +20,6 @@ export default function Layout() {
                 setBackgroundImage('imgs/evening.png');
             }
         };
-
         getCurrentTime();
     }, []);
 
@@ -34,26 +32,22 @@ export default function Layout() {
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center',
-            }}>
+            }}
+        >
             <img className="rotate" src="/imgs/e.png" alt="" />
             <img className="rotateS" src="/imgs/e.png" alt="" />
+            <NavigationBar />
             <div className="container px-4 px-lg-6" id="containerPad">
-            <div className="row gx-4 gx-lg-6">
-
-            <Header />
-                <NavigationBar />
-                <div className="col-lg-7" id="body">
-                    <Outlet />
+                <Header />
+                <div className="row gx-4 gx-lg-6">
+                    <div className="col-lg-7" id="body">
+                        <Outlet />
+                    </div>
+                    <Connections />
+                    
                 </div>
-                <Connections /> 
-
-            
-
-            
-                    <Footer />
-            </div>
-            
+                <Footer />
             </div>
         </div>
-    )
+    );
 }
