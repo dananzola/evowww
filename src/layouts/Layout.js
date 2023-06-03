@@ -15,9 +15,9 @@ export default function Layout() {
             if (hours >= 6 && hours < 12) {
                 setBackgroundImage('imgs/beachbg.png');
             } else if (hours >= 12 && hours < 18) {
-                setBackgroundImage('imgs/afternoon.png');
+                setBackgroundImage('imgs/beachbg.png');
             } else {
-                setBackgroundImage('imgs/evening.png');
+                setBackgroundImage('imgs/beachbg.png');
             }
         };
         getCurrentTime();
