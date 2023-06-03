@@ -42,9 +42,9 @@ export default function Layout() {
                 <div className="row gx-4 gx-lg-6">
                     <div className="col-lg-7" id="body">
                         <Outlet />
-                        <Connections />
+                        
                     </div>
-                    
+                    <Connections />
                     
                 </div>
                 <Footer />
