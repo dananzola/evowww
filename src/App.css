@@ -10891,8 +10891,7 @@ body {
     right: -10rem;
     top: -20rem;
     z-index: 1;
-    width: ;
-}
+    }
 
 .skew {
     animation: scaleUpDown 20s ease-out infinite;
@@ -10925,7 +10924,7 @@ a.nav-link:hover {
 }
 
 #transDarkBG {
-    background: rgba(0, 0, 0, 0.8); padding: 10px; border: 2px; boxShadow: 0 4px 8px rgba(0, 0, 0, 0.2); color: white;
+    background: rgba(0, 0, 0, 0.8); padding: 10px; border: 2px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); color: white;
 }
 
 #transBG {
@@ -10950,7 +10949,7 @@ a.nav-link:hover {
     background: rgba(0, 0, 0, 0.8);
     padding: 10px;
     border: 2px;
-    boxShadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     color: white;
 }
 
