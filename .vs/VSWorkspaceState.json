@@ -3,8 +3,9 @@
     "",
     "\\public",
     "\\src",
-    "\\src\\comps"
+    "\\src\\comps",
+    "\\src\\layouts"
   ],
-  "SelectedNode": "\\src\\layouts",
+  "SelectedNode": "\\public\\index.html",
   "PreviewInSolutionExplorer": false
 }
