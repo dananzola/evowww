@@ -25,7 +25,7 @@ export default function Layout() {
 
     return (
         <div
-            className="App"
+            className="App container px-4 px-lg-6"
             style={{
                 backgroundImage: `url(${backgroundImage})`,
                 backgroundAttachment: 'fixed',
@@ -37,7 +37,7 @@ export default function Layout() {
             <img className="rotate" src="/imgs/e.png" alt="" />
             <img className="rotateS" src="/imgs/e.png" alt="" />
             <NavigationBar />
-            <div className="container px-4 px-lg-6" id="containerPad">
+            
                 <Header />
                 <div className="row gx-4 gx-lg-6">
                     <div className="col-lg-7" id="body">
@@ -48,7 +48,7 @@ export default function Layout() {
                     
                 </div>
                 <Footer />
-            </div>
+            
         </div>
     );
 }
