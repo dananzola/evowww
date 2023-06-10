@@ -6,7 +6,7 @@ import PriceCalc from './PriceCalc';
 
 const Body = () => {
     return (
- <div>
+ <div><PriceCalc />
     <h4 className="m-0" id="titles">What do we offer you?</h4>
     <h6 className="m-0 mb-2">T-Shirts, Socks, Signs, Stickers, Mugs, Tumblers...</h6>
     <div className="col-lg-12 rounded mt-3" >
